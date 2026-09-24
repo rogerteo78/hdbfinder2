@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/* Leaflet map styles */
+.leaflet-container {
+  font-family: inherit;
+}
+
+.custom-hdb-marker {
+  background: transparent;
+  border: none;
+}
+
+/* Marker Cluster custom styling */
+.custom-cluster-icon {
+  background: transparent;
+  border: none;
+}
+
+.cluster-bubble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 0 0 3px rgba(255, 255, 255, 0.85);
+  font-weight: 700;
+  color: white;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cluster-bubble:hover {
+  transform: scale(1.12);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25), 0 0 0 4px rgba(255, 255, 255, 0.95);
+}
+
+.cluster-small {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+  font-size: 13px;
+}
+
+.cluster-medium {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  font-size: 14px;
+}
+
+.cluster-large {
+  width: 58px;
+  height: 58px;
+  background: linear-gradient(135deg, #ea580c 0%, #e11d48 100%);
+  font-size: 15px;
+}
+
+.cluster-subtext {
+  font-size: 9px;
+  font-weight: 500;
+  opacity: 0.9;
+  line-height: 1;
+  margin-top: 1px;
+}
+
+
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  padding: 4px;
+}
+
+.leaflet-popup-content {
+  margin: 10px 12px;
+  line-height: 1.4;
+}
+

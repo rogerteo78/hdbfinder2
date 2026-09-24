@@ -1,0 +1,6 @@
+{
+  "name": "Singapore HDB Resale Explorer",
+  "description": "Interactive exploration and analytics for Singapore HDB resale flat transactions with OneMap integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
