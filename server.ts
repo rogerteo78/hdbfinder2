@@ -6,6 +6,7 @@ import hdbHandler from './api/hdb.js';
 import geocodeHandler from './api/geocode.js';
 import healthHandler from './api/health.js';
 import chatHandler from './api/chat.js';
+import mcpHandler from './api/mcp.js';
 
 dotenv.config();
 
@@ -24,6 +25,8 @@ async function startServer() {
   app.get('/api/geocode', geocodeHandler);
   app.get('/api/health', healthHandler);
   app.post('/api/chat', chatHandler);
+  app.post('/api/mcp', mcpHandler);
+  app.get('/api/mcp', mcpHandler);
 
   // Development: Mount Vite middlewares for SPA
   if (process.env.NODE_ENV !== 'production') {
